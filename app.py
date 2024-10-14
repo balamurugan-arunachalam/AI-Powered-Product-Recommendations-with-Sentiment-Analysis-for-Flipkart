@@ -5,7 +5,7 @@ import cohere
 import os
 
 # Set page config (must be the first Streamlit command)
-st.set_page_config(page_title="Flipkart Product Recommendation", layout="centered")
+st.set_page_config(page_title="Product Recommendation", layout="centered")
 
 # Load sentiment data
 sentiment_data = pd.read_csv("D:/Bala DS/Data science Class materials/Projects/P6_Final_Project/Project_Final/FlipKart_Dataset_with_Sentiment_Analysis.csv")
@@ -36,18 +36,17 @@ def recommend_products(query, sentiment_data):
         return pd.DataFrame()
 
 # Streamlit App Interface
-st.markdown("<h1 style='text-align: center; color: #00BFFF;'>📱 Flipkart Product Recommendation Engine</h1>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center; color: #FFFFFF;'>Find the best-rated phones based on user reviews and sentiment analysis!</h3>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #800080;'>📱Flipkart Live Data Product Recommendation System📱</h1>", unsafe_allow_html=True)
+st.markdown("<h3 style='text-align: center; color: #808080;'>Find the top-rated phones as per user reviews and sentiment analysis!</h3>", unsafe_allow_html=True)
 
 # Add a relevant phone banner image for better UI
-st.image("https://fs.npstatic.com/userfiles/7687254/image/Best_Smartphones_October_2023-w810h462.jpg", use_column_width=True)
-
+st.image("https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2020/03/wallpapers-e1585151078813.jpg", use_column_width=True)
 # User input section with styled markdown
-st.markdown("<h4 style='color: #800000;'>🎯 Enter your preferences to get the best phone recommendations:</h4>", unsafe_allow_html=True)  # Maroon color
-st.markdown("<p style='color: #FAEBD7;'>For example: <b>best camera phone</b>, <b>lightweight</b>, <b>long battery life</b>, etc.</p>", unsafe_allow_html=True)  # Linen color
+st.markdown("<h4 style='color: #800000;'>📝To receive the top phone recommendations, please input your preferences:📝</h4>", unsafe_allow_html=True)  # Maroon color
+st.markdown("<p style='color: #FF4500;'>For example: <b>best camera phone</b>, <b>lightweight</b>, <b>long battery life</b>, etc.</p>", unsafe_allow_html=True)  # Linen color
 
 # Add disclaimer about input length
-st.markdown("<p style='color: #FF4500;'>⚠️ Disclaimer: Please limit your input to 100 words or less.</p>", unsafe_allow_html=True)
+st.markdown("<p style='color: #FF0000;'>⚠️ Disclaimer:Please ensure that your input does not exceed 100 words.</p>", unsafe_allow_html=True)
 
 # Create a container for input elements
 with st.container():
@@ -63,7 +62,7 @@ if recommend_button:
             recommended_products = recommend_products(query, sentiment_data)
         
         if not recommended_products.empty:
-            st.markdown("<h3 style='color: #32CD32;'>🎉 Top 5 Recommended Phones:</h3>", unsafe_allow_html=True)
+            st.markdown("<h3 style='color: #32CD32;'>🎊🎁Here are the top 5 phones that we recommend:🎊🎁</h3>", unsafe_allow_html=True)
 
             # Display product name and price with colored text in a structured format
             for idx, row in recommended_products.iterrows():
@@ -72,4 +71,4 @@ if recommend_button:
             st.warning("No matching products found. Please try a different query.")
 
 # Add the new footer with your name
-st.markdown("<p style='text-align: center; font-size:14px; color:gray;'>Flipkart Product Recommendation Engine by <b>Balamurugan Arunachalam</b></p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; font-size:14px; color:gray;'>Flipkart Live Data Product Recommendation System by <b>Balamurugan Arunachalam</b></p>", unsafe_allow_html=True)
