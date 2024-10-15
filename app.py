@@ -36,8 +36,7 @@ def recommend_products(query, sentiment_data):
         return pd.DataFrame()
 
 # Streamlit App Interface
-st.markdown("<h1 style='text-align: center; color: #800080;'>📱Flipkart Live Data Product Recommendation System📱</h1>", unsafe_allow_html=True)
-st.markdown("<h3 style='text-align: center; color: #808080;'>Find the top-rated phones as per user reviews and sentiment analysis!</h3>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align: center; color: #800080;'>📱AI-Powered-Product-Recommendations-with-Sentiment-Analysis-for-Flipkart📱</h1>", unsafe_allow_html=True)
 
 # Add a relevant phone banner image for better UI
 st.image("https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2020/03/wallpapers-e1585151078813.jpg", use_column_width=True)
@@ -45,13 +44,10 @@ st.image("https://i0.wp.com/www.smartprix.com/bytes/wp-content/uploads/2020/03/w
 st.markdown("<h4 style='color: #800000;'>📝To receive the top phone recommendations, please input your preferences:📝</h4>", unsafe_allow_html=True)  # Maroon color
 st.markdown("<p style='color: #FF4500;'>For example: <b>best camera phone</b>, <b>lightweight</b>, <b>long battery life</b>, etc.</p>", unsafe_allow_html=True)  # Linen color
 
-# Add disclaimer about input length
-st.markdown("<p style='color: #FF0000;'>⚠️ Disclaimer:Please ensure that your input does not exceed 100 words.</p>", unsafe_allow_html=True)
-
 # Create a container for input elements
 with st.container():
-    query = st.text_area("Describe your ideal phone features or type:", height=100)
-    recommend_button = st.button("🔍 Recommend")
+    query = st.text_area("Describe what you want:", height=100)
+    recommend_button = st.button("🔍 Suggestion")
 
 # Validate input and show recommendations when the button is clicked
 if recommend_button:
@@ -70,5 +66,4 @@ if recommend_button:
         else:
             st.warning("No matching products found. Please try a different query.")
 
-# Add the new footer with your name
-st.markdown("<p style='text-align: center; font-size:14px; color:gray;'>Flipkart Live Data Product Recommendation System by <b>Balamurugan Arunachalam</b></p>", unsafe_allow_html=True)
+
