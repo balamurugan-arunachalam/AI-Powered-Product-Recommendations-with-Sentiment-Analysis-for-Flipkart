@@ -41,14 +41,13 @@ This project focuses on scraping product reviews from Flipkart, analyzing custom
 
 ![TextBlob Sentiment Distribution](https://github.com/user-attachments/assets/4d1de4e4-d9f0-46ef-89ce-07238ddabf63)
 
-![1st](https://github.com/user-attachments/assets/db1989d5-a3cd-40fb-840a-338c48763fb6)
+![Screenshot 2024-10-15 143555](https://github.com/user-attachments/assets/6c87654a-4367-4627-9c09-4eacac3c6eb3)
 
-![2nd](https://github.com/user-attachments/assets/f248652c-bc96-4852-90ec-e810eca941c9)
+![Screenshot 2024-10-15 143619](https://github.com/user-attachments/assets/ece53381-385b-4477-8a1d-f6ba73887167)
 
-![3rd](https://github.com/user-attachments/assets/75da12d2-34be-4513-94d4-962de2058e02)
+![Screenshot 2024-10-15 143709](https://github.com/user-attachments/assets/f6fe2faa-b817-42c2-9fe1-3ca906d086c7)
 
-![4th](https://github.com/user-attachments/assets/cb38b8b0-bf69-41b2-bd12-ff537ffaf24f)
-
+![Screenshot 2024-10-15 144113](https://github.com/user-attachments/assets/0ca517c7-7a35-4b65-a3d7-5ab57078f11c)
 
 ## Future Improvements
 
