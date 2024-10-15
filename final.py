@@ -67,4 +67,4 @@ if recommend_button:
             st.warning("No matching products found. Please try a different query.")
 
 # Add the new footer with your name
-st.markdown("<p style='text-align: center; font-size:14px; color:gray;'>System Created by <b>Balamurugan Arunachalam</b></p>", unsafe_allow_html=True)
+st.markdown("<p style='text-align: center; font-size:14px; color:gray;'>AI Recommendation System Created by <b>Balamurugan Arunachalam</b></p>", unsafe_allow_html=True)
