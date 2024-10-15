@@ -8,7 +8,7 @@ import os
 st.set_page_config(page_title="Product Recommendation", layout="centered")
 
 # Load sentiment data
-sentiment_data = pd.read_csv("D:/Bala DS/Data science Class materials/Projects/P6_Final_Project/Project_Final/FlipKart_Dataset_with_Sentiment_Analysis.csv")
+sentiment_data = pd.read_csv("FlipKart_Dataset_with_Sentiment_Analysis.csv")
 
 # Initialize Cohere (Replace with your Cohere API Key)
 cohere_api_key = 'LGqaNW3Tfcdb3A1rhmd3NOZI5jMsbpLJlnjS4ZsW'
